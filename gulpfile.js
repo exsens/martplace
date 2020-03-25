@@ -8,7 +8,7 @@ uglify = require('gulp-uglify'),
 cssmin = require('gulp-cssmin');
 
 gulp.task('sass', function(){
-    return gulp.src('app/scss/style.scss')
+    return gulp.src('app/scss/**/*.scss')
         .pipe(sass({outputStyle: 'compressed'}))
         .pipe(rename({suffix : '.min'}))
         .pipe(autoprefixer({
@@ -22,7 +22,10 @@ gulp.task('style', function(){
     return gulp.src([
         'node_modules/normalize.css/normalize.css',
         'node_modules/slick-carousel/slick/slick.css',
-        'node_modules/magnific-popup/dist/magnific-popup.css'
+        'node_modules/magnific-popup/dist/magnific-popup.css',
+        'node_modules/jquery-form-styler/dist/jquery.formstyler.css',
+        'node_modules/rateyo/src/jquery.rateyo.css',
+        'node_modules/slick-carousel/slick/slick.css',
     ])
         .pipe(concat('libs.min.css'))
         .pipe(cssmin())
@@ -32,7 +35,10 @@ gulp.task('style', function(){
 gulp.task('script', function(){
     return gulp.src([
         'node_modules/slick-carousel/slick/slick.js',
-        'node_modules/magnific-popup/dist/jquery.magnific-popup.js'
+        'node_modules/magnific-popup/dist/jquery.magnific-popup.js',
+        'node_modules/jquery-form-styler/dist/jquery.formstyler.js',
+        'node_modules/rateyo/src/jquery.rateyo.js',
+        'node_modules/slick-carousel/slick/slick.js',
     ])
         .pipe(concat('libs.min.js'))
         .pipe(uglify())
