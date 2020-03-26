@@ -11,5 +11,25 @@ $(function(){
         spacing: '3px',
       });
 
-      $('.weeky__slider').slick();
+  $('.weeky__slider').slick();
+  
+  $('.newest__filter-icon').click(function (event) { 
+    $('.newest__filter-menu').toggleClass('newest__filter-menu--active');
+
+  });
+
+  $('.followers-slider__items').slick({
+    Infinite: true,
+    slidesToShow: 3,
+    slidesToScroll: 3,
+    
+  });
+
+
+
+
+
+
+  var mixer = mixitup('.newest__items');
+
 });

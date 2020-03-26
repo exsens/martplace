@@ -77,6 +77,9 @@ body {
         border-radius: 4px;
         background-color: rgb(255, 255, 255);
         box-shadow: 0px 2px 50px 0px rgba(0, 0, 0, 0.08);
+        &__bottom {
+            min-height: 62px;
+        }
 }
 .title--item {
     font-size: 24px;
@@ -162,7 +165,6 @@ body {
     line-height: 30px;
 }
 .bottom-line {
-    min-height: 80px;
     display: flex;
     align-items: center;
     border-top:1px solid $line;
