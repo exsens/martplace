@@ -200,3 +200,17 @@ body {
     color: $blue;
     font-size: 15px;
 }
+.item-data {
+    font-size: 15px;
+    color: #999999;
+    font-weight: 300;
+    i{
+        color: $blue;
+    }
+}
+.item-comment,
+.item-views {
+    font-size: 15px;
+    color: #7e7e7e;
+    font-weight: 300;
+}
