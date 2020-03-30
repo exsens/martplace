@@ -194,13 +194,19 @@
         }
     }
 
+}
+
+// main
+
+
+// advantage
+.advantage {
     &__search-form {
-        position: absolute;
-        max-width: 1140px;
+        position: relative;
+        z-index: 5;
+        margin-top: -68px;
         width: 100%;
         padding: 40px;
-        transform: translate(0, -50%);
-
         &::before {
             content: "";
             height: 50px;
@@ -238,7 +244,8 @@
             border-radius: 4px;
             font-weight: 300;
             height: 55px;
-            min-width: 613px;
+            max-width: 613px;
+            width: 100%;
             border-top-right-radius: 0;
             border-bottom-right-radius: 0;
             padding: 0 30px;
@@ -309,16 +316,8 @@
         }
     }
 
-}
-
-// main
-
-
-// advantage
-.advantage {
-
     &__items {
-        padding-top: 50px;
+        
         display: flex;
         justify-content: space-between;
     }
@@ -569,7 +568,7 @@
         &-img {
             background: linear-gradient(90deg, rgba(115, 71, 193, 1) 0%, rgba(6, 116, 236, 1) 100%);
             max-width: 362px;
-            min-height: 230px;
+            max-height: 230px;
             margin-bottom: 30px;
             border-top-left-radius: 4px;
             border-top-right-radius: 4px;
