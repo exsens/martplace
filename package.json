@@ -1,7 +1,6 @@
 {
   "name": "start-gulp",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -21,9 +20,19 @@
     "magnific-popup": "^1.1.0",
     "mixitup": "^3.3.1",
     "normalize.css": "^8.0.1",
+    "object-fit-images": "^3.2.4",
     "slick-carousel": "^1.8.1"
   },
   "dependencies": {
     "rateyo": "^2.3.5"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/exsens/martplace.git"
+  },
+  "bugs": {
+    "url": "https://github.com/exsens/martplace/issues"
+  },
+  "homepage": "https://github.com/exsens/martplace#readme",
+  "description": ""
 }

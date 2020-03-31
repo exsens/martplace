@@ -40,6 +40,7 @@ gulp.task('script', function(){
         'node_modules/rateyo/src/jquery.rateyo.js',
         'node_modules/slick-carousel/slick/slick.js',
         'node_modules/mixitup/dist/mixitup.js',
+        'node_modules/object-fit-images/dist/ofi.js'
     ])
         .pipe(concat('libs.min.js'))
         .pipe(uglify())
