@@ -1,4 +1,9 @@
 $(function(){
+  
+    $('.drop-down__box').click(function (event) {
+      $(this).children('.menu-drop-down').toggleClass('menu-drop-down--active')
+      });
+
 
     $(' select').styler();
 

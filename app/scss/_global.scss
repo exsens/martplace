@@ -71,6 +71,12 @@ body {
     padding: 0;
     margin: 0 auto;
 }
+.object-fit {
+    object-fit: cover;
+    font-family: 'object-fit:cover';
+    object-position: center center;
+}
+
 .button {
     color: #fff;
     background-color: $blue;
@@ -121,6 +127,9 @@ body {
         border-radius: 25px;
         font-size: 15px;
         font-weight: 300;
+        min-width: 65px;
+        max-width: 135px;
+        @include ovrf;
     }
 }
 .title {
@@ -131,6 +140,7 @@ body {
    
     
     &__inner {
+        height: 110px;
         min-height: 110px;
         width: 100%;
         padding: 0 30px ;
@@ -223,3 +233,4 @@ body {
     color: #7e7e7e;
     font-weight: 300;
 }
+
