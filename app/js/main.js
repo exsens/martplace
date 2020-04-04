@@ -1,9 +1,12 @@
 $(function(){
   
     $('.drop-down__box').click(function (event) {
-      $(this).children('.menu-drop-down').toggleClass('menu-drop-down--active')
-      });
+      
+      $('.menu-drop-down').removeClass('menu-drop-down--active');
+      $(this).children('.menu-drop-down').addClass('menu-drop-down--active');
+      
 
+      });
 
     $(' select').styler();
 

@@ -81,6 +81,7 @@
     overflow: hidden; 
     white-space: nowrap; 
     text-overflow: ellipsis;
+    cursor: pointer;
     &__avatar {
         border-radius: 50%;
         width: 50px;
@@ -124,7 +125,11 @@
         font-weight: 500;
         color: #333333;
         text-transform: uppercase;
-        
+        translate: color .2s linear;
+        cursor: pointer;
+        &:hover {
+            color: $blue;
+        }
     }
 }
 
@@ -162,8 +167,10 @@
     }
 }
 .drop-down__box {
-    cursor: pointer;
     position: relative;
+}
+.drop-down__col+.drop-down__col {
+    margin-left: 43px;
 }
 .user-drop-down {
     position: absolute;
@@ -196,7 +203,7 @@
     transform: scaleY(0);
     transform-origin: top center;
     transition: .3s;
-    z-index: 3;
+    z-index: 5;
     &--active {
         opacity: 1;
         transform: scaleY(1);
@@ -221,9 +228,10 @@
             }
         }
     &__title {
-        font-weight: 500;
+        font-weight: 700;
         color:#000;
         line-height: 40px;
+        margin-bottom: 10px;
     }
    
 }
@@ -234,10 +242,25 @@
     z-index: 3;
     
 }
+.pages-drop-down {
+    position: absolute;
+    left: -444px;
+    top: 48px;
+    z-index: 3;
+    display: flex;
+}
 .pages-menu {
     border-top: 1px solid $line;
+    padding: 20px 0;
+    columns: 2;
+    li {
+        min-width: 180px;
+    }
     a {
         padding-left:0;
+    }
+    &--col1 {
+        columns: 1;
     }
 }
 
@@ -303,7 +326,7 @@
 .advantage {
     &__search-form {
         position: relative;
-        z-index: 5;
+        z-index: 2;
         margin-top: -68px;
         width: 100%;
         padding: 40px;
