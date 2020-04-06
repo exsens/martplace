@@ -1,12 +1,12 @@
 $(function(){
 
       $('.drop-down__box').on('click', function() {
-        if (!$(this).children('.menu-drop-down').hasClass('menu-drop-down--active')) {
-          $('.menu-drop-down').removeClass('menu-drop-down--active');
-          $(this).children('.menu-drop-down').addClass('menu-drop-down--active');
+        if (!$(this).children('.menu-drop-down, .icons-box__menu').hasClass('menu-drop-down--active')) {
+          $('.menu-drop-down, .icons-box__menu').removeClass('menu-drop-down--active');
+          $(this).children('.menu-drop-down, .icons-box__menu').addClass('menu-drop-down--active');
         } 
         else {
-          $(this).children('.menu-drop-down').removeClass('menu-drop-down--active');
+          $(this).children('.menu-drop-down, .icons-box__menu').removeClass('menu-drop-down--active');
         }
       });
 
