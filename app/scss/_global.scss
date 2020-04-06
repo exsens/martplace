@@ -99,6 +99,14 @@ body {
         &__bottom {
             min-height: 62px;
         }
+        &-price {
+            background-color: rgba(6, 116, 236, 0.1);
+            border-radius: 14px;
+            padding: 7px 17px;
+            font-size: 15px;
+            font-weight: 500;
+            color: $blue;
+        }
 }
 .title--item {
     font-size: 24px;
@@ -232,5 +240,38 @@ body {
     font-size: 15px;
     color: #7e7e7e;
     font-weight: 300;
+}
+.delete {
+    text-align: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: #f0ebf8;
+    font-size: 15px;
+    color: #818c98;
+    line-height: 32px;
+
+    &::before {
+        font-family: 'Linearicons-Free';
+        content: "\e811";
+        
+    }
+}
+.gocart,
+.gocheckout {
+    display: block;
+    width: 100%;
+    color: #fff;
+    background-color: $purple;
+    padding: 20px;
+    line-height: 20px;
+    font-size: 15px;
+    text-align: center;
+}
+.gocart {
+    background-color: $purple;
+}
+.gocheckout{
+    background-color: $blue;
 }
 
