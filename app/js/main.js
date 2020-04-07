@@ -1,14 +1,38 @@
 $(function(){
-
-      $('.drop-down__box').on('click', function() {
-        if (!$(this).children('.menu-drop-down, .icons-box__menu').hasClass('menu-drop-down--active')) {
+      $('.menu__link, .user-box, .icons-box' ).on('click', function() {
+        if (!$(this).siblings('.menu-drop-down, .icons-box__menu').hasClass('menu-drop-down--active')) {
           $('.menu-drop-down, .icons-box__menu').removeClass('menu-drop-down--active');
-          $(this).children('.menu-drop-down, .icons-box__menu').addClass('menu-drop-down--active');
+          $('.menu__link').removeClass('active');
+          $(this).siblings('.menu-drop-down, .icons-box__menu').addClass('menu-drop-down--active');
+          $(this).addClass('active');
         } 
         else {
-          $(this).children('.menu-drop-down, .icons-box__menu').removeClass('menu-drop-down--active');
+          $(this).siblings('.menu-drop-down, .icons-box__menu').removeClass('menu-drop-down--active');
+          $(this).removeClass('active');
         }
       });
+
+      $('.menu-drop-down__title').on('click', function() {
+        if (!$(this).siblings('.pages-menu').hasClass('active')) {
+          $('.pages-menu').removeClass('active');
+          $('.menu-drop-down__title').removeClass('active');
+          $(this).siblings('.pages-menu').addClass('active');
+          $(this).addClass('active');
+        } 
+        else {
+          $(this).siblings('.pages-menu').removeClass('active');
+          $(this).removeClass('active');
+        }
+      });
+
+      $('.brg-menu').on('click', function(){
+          $('.menu').toggleClass('active');
+      });
+      $('.user-menu').on('click', function(){
+          $('.icons-box__inner, .header__user-box,  .header__btn, .header__logo').toggleClass('active');
+      });
+      
+
 
 
     $(' select').styler();
@@ -22,7 +46,16 @@ $(function(){
         spacing: '3px',
       });
 
-  $('.weeky__slider').slick();
+  $('.weeky__slider').slick({
+    responsive: [
+      {
+        breakpoint: 701,
+        settings: {
+          arrows: false,
+        }
+      },
+    ]
+  });
   
   $('.newest__filter-icon').click(function (event) { 
     $('.newest__filter-menu').toggleClass('newest__filter-menu--active');
