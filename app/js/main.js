@@ -66,6 +66,14 @@ $(function(){
     Infinite: true,
     slidesToShow: 3,
     slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 905,
+        settings: {
+          slidesToShow: 2,
+        }
+      },
+    ]
     
   });
 
