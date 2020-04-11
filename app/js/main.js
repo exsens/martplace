@@ -72,6 +72,15 @@ $(function(){
         settings: {
           slidesToShow: 2,
         }
+        
+      },
+      {
+        breakpoint: 640,
+        settings: {
+          slidesToShow: 1,
+          arrows: false,
+        }
+        
       },
     ]
     
