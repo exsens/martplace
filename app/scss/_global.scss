@@ -1,13 +1,14 @@
 html {
     box-sizing: border-box;
 }
+
 *, 
 *:before, 
 *:after {
     box-sizing: inherit;
 }
-.html,
- body{
+html, 
+body{
     height: 100%;
     position: relative;
     overflow-x: hidden;
@@ -329,4 +330,27 @@ body {
         }
     }
 
+}
+.breadcrumbs {
+
+    li {
+        display: inline-block;
+        margin-right: 4px;
+        color: #fff;
+    }
+    li+li{
+        color: #bfcad7;
+        padding-left: 16px;
+        position: relative;
+        &::before {
+            content: "/";
+            color: #fff;
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+    }
+}
+.page-top {
+    background: linear-gradient(90deg, rgba(114, 33, 160, 1) 0%, rgba(13, 62, 242, 1) 100%);
 }

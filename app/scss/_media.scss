@@ -194,6 +194,12 @@
            max-width: 475px;
         }
     }
+    .weeky__slider,
+    .followers-slider {
+        .slick-list {
+            overflow: hidden;
+        }
+    }
 }
 
 @media (max-width:810px) {
@@ -534,7 +540,7 @@
         }
     }
     .advantage__search-form {
-        margin-top: 0;
+        margin-top: 20px;
     }
     .advantage__search-form form {
         display: block;
@@ -617,7 +623,9 @@
     .guarantee__col+.guarantee__col {
         border-right: none;
     }
-    
+    .advantage__search-form {
+        padding: 0;
+    }
 }
 
 @media (max-width:415px) {
