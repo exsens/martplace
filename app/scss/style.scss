@@ -1641,18 +1641,21 @@
     &__item {
         flex-basis: calc(33.333333% - 28px);
         margin-left: 28px;
-
+        display: flex;
+        flex-direction: column;
+        min-height: 100%;
+        max-width: 361px;
         &-img {
             @include bg;
             width: 100%;
             min-height: 230px;
-
+            border-top-right-radius: 4px;
         }
 
         &-info {
             padding: 25px 30px 20px;
             text-align: left;
-
+            flex: 1 0 auto;
         }
 
         &-title {
@@ -1666,6 +1669,7 @@
             height: 100%;
             height: auto;
             padding: 8px 30px;
+            flex: 0 0 auto
         }
 
         &-data {
@@ -1832,7 +1836,6 @@
                 min-height: 46px;
                 align-items: center;
                 font-size: 15px;
-                min-width: 360px;
                 position: relative;
 
                 &::placeholder {

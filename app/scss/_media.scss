@@ -24,6 +24,31 @@
     .followers-slider .slick-list {
         margin: 0;
     }
+    .last-news__items {
+        justify-content: center;
+    }
+    .last-news__item {
+        flex-basis: calc(50% - 28px);
+        margin-bottom: 20px;
+    }
+    .last-news__item-info {
+        padding: 20px 15px;
+    }
+    .last-news__item-bottom {
+        padding: 6px 15px;
+    }
+    .last-news__item-comment {
+        margin-left: 10px;
+    }
+    .footer__col { 
+        margin-bottom: 25px;
+    }
+    .footer__col--col1 {
+        max-width: 100%;
+    }
+    .footer__row {
+        justify-content: start;
+    }
 }
 
 @media (max-width:996px) {
@@ -169,7 +194,6 @@
            max-width: 475px;
         }
     }
-    
 }
 
 @media (max-width:810px) {
@@ -197,7 +221,7 @@
     }
     .section,
     .main__inner {
-        padding: 100px 0 150px;
+        padding: 70px 0 105px;
     }
 
     .icons-box__menu {
@@ -236,6 +260,12 @@
     }
     .chooses__item {
         flex-basis: calc(50% - 30px);
+    }
+    .shopping__row {
+        display: block;
+    }
+    .shopping__col {
+        width: 100%;
     }
 }
 
@@ -375,6 +405,10 @@
     .followers-slider__item-info {
         padding: 10px;
     }
+    .guarantee__col {
+        padding: 20px 15px;
+    }
+   
 
 }
 
@@ -416,6 +450,9 @@
         max-width: 50%;
         width: 50%;
         margin-bottom: 20px;
+    }
+    .last-news__item {
+        flex-basis: calc(100% - 28px);
     }
     
 }
@@ -563,6 +600,24 @@
     .feedback__link {
         margin-top: 25px;
     }
+    .chooses__items {
+        justify-content: center;
+    }
+    .chooses__item {
+        flex-basis: calc(100% - 30px);
+        max-width: 450px;
+        margin-bottom: 15px;
+    }
+    .shopping__col {
+        padding: 45px 10px 50px;
+    }
+    .guarantee__row {
+        display: block;
+    }
+    .guarantee__col+.guarantee__col {
+        border-right: none;
+    }
+    
 }
 
 @media (max-width:415px) {
@@ -658,5 +713,31 @@
     }
     .feedback__link {
         margin-top: 15px;
+    }
+    .chooses__subtitle {
+        line-height: 1.3;
+        margin:0 auto 15px;
+    }
+    .shopping__col-icon {
+        margin-bottom: 30px;
+    }
+    .shopping__col-title {
+        font-size: 32px;
+        margin-bottom: 15px;
+    }
+    .shopping__col-text {
+        line-height: 1.4;
+        margin: 0 auto 25px;
+    }
+    .footer__social {
+        justify-content: space-between;
+        flex-wrap: wrap;
+        li+li {
+            margin-left: 0;
+        }
+    }
+    .footer__copyright {
+        min-height: 40px;
+        font-size: 11px;
     }
 }
