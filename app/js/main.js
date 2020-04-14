@@ -86,7 +86,17 @@ $(function(){
     
   });
 
-
+  $('.range-price').ionRangeSlider({
+    type: 'double',
+    min: 0,
+    max: 350,
+    from: 30,
+    to: 300,
+    prefix: '$',
+    hide_min_max: true,
+    force_edges: true,
+    step: 1,
+  });
 
 
 

@@ -397,122 +397,175 @@
                 <div class="category-filter">
                     <div class="container">
                         <div class="category-filter__inner">
-                        <div class="category-filter__btns">
-                            <button >New Products</button>
-                            <button >Popular Products</button>
+                            <div class="category-filter__btns">
+                                <button>New Products</button>
+                                <button>Popular Products</button>
+                            </div>
+
+                            <form class="category-filter__form" action="#">
+                                <select name="#" id="#">
+                                    <option value="low">Price : Low to High</option>
+                                    <option value="high">Price : High to Low</option>
+                                </select>
+                                <select name="#" id="#">
+                                    <option value="#">12 Items Per Page</option>
+                                    <option value="#">16 Items Per Page</option>
+                                </select>
+                            </form>
+
+                            <div class="category-filter-icons">
+                                <button><svg width="20px" height="20px">
+                                        <use xlink:href="images/category/icon.svg#icon1">
+                                    </svg>
+                                </button>
+                                <button> <svg width="21px" height="19px">
+                                        <use xlink:href="images/category/icon.svg#icon2">
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="category-content section">
+                    <div class="container">
+                        <div class="category-content__inner">
+                            <div class="category-aside">
+
+                                <div class="category-aside__item item">
+                                    <h3 class="category-aside__title">Categories</h3>
+                                    <ul class="category-aside__list category-aside__list--chevron">
+                                        <li><a href="#">Wordpress</a><span>45</span></li>
+                                        <li><a href="#">Landing Page</a><span>76</span></li>
+                                        <li><a href="#">Psd Template</a><span>45</span></li>
+                                        <li><a href="#">Plugins</a><span>91</span></li>
+                                        <li><a href="#">HTML Template</a><span>55</span></li>
+                                        <li><a href="#">Components</a><span>81</span></li>
+                                        <li><a href="#">Joomla Template</a><span>36</span></li>
+                                    </ul>
+                                </div>
+
+                                <div class="category-aside__item item">
+                                    <h3 class="category-aside__title">Filter Products</h3>
+                                    <ul class="category-aside__list category-aside__list--circle">
+                                        <li><a href="#">Trending Products</a></li>
+                                        <li><a href="#">Popular Products</a></li>
+                                        <li><a href="#">New Products</a></li>
+                                        <li><a href="#">Best Seller</a></li>
+                                        <li><a href="#">High Price</a></li>
+                                        <li><a href="#">Best Rating</a></li>
+                                        <li><a href="#">Low Price</a></li>
+                                    </ul>
+                                </div>
+
+                                <div class="category-aside__item item">
+                                    <h3 class="category-aside__title">Pricing Range</h3>
+                                    <form action="#" class="category-aside__form">
+                                        <input class="range-price" type="text">
+                                        <button class="button" type="button"> Search Update </button>
+                                    </form>
+                                    
+                                </div>
+                            </div>
+                            <div class="category-grid"></div>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+            <!-- category -->
+
+
+            <!-- join -->
+
+            <section class="join section">
+                <div class="container">
+                    <div class="join__inner">
+                        <h2 class="join__title title">Ready to Join Our Marketplace!</h2>
+                        <p class="join__subtitle">Over 25,000 designers and developers trust the MartPlace.</p>
+                        <a class="join__link" href="#">Join Us Today</a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- join -->
+
+
+
+
+
+        </div>
+        <footer class="footer">
+            <div class="footer__top section">
+                <div class="container">
+                    <div class="footer__row">
+
+                        <div class="footer__col footer__col--col1">
+                            <div class="footer__logo"><img src="images/footer-logo.png" alt="logo"></div>
+                            <div class="footer__col-text">Nunc placerat mi id nisi interdum they mollis. Praesent
+                                pharetra, justo ut scel erisque the mattis, leo quam.</div>
+                            <ul class="footer__col-contact">
+                                <li> <a class="link-phone" href="tel:+67898752235"><i class="lnr lnr-phone-handset"></i>
+                                        Phone: +6789-875-2235</a></li>
+                                <li> <a class="link-mail" href="mailto:support@aazztech.com"><i
+                                            class="lnr lnr-envelope">
+                                        </i> support@aazztech.com</a></li>
+                                <li> <a class="link-map" href="#"><i class="lnr lnr-map-marker"> </i> 202 New Hampshire
+                                        Avenue
+                                        Northwest #100, New York-2573</a></li>
+                            </ul>
                         </div>
 
-                        <form class="category-filter__form" action="#">
-                            <select name="" id=""></select>
-                            <select name="" id=""></select>
-                        </form>
+                        <div class="footer__col footer__col--col2">
+                            <div class="footer__col-title">Our Company</div>
+                            <ul class="footer__menu">
+                                <li><a href="#">About Us</a></li>
+                                <li><a href="#">How It Work</a></li>
+                                <li><a href="#">Affiliates</a></li>
+                                <li><a href="#">Testimonials</a></li>
+                                <li><a href="#">Contact Us</a></li>
+                                <li><a href="#">Copyright Notice</a></li>
+                                <li><a href="#">Blog</a></li>
+                            </ul>
+                        </div>
 
-                        <div class="category-filter-icons">
-                        <svg width="20px" height="20px" >
-                                <use xlink:href="images/category/icon.svg#icon1">
-                            </svg>
-                            
-                            <svg width="21px" height="19px" >
-                                <use xlink:href="images/category/icon.svg#icon2">
-                            </svg>
+                        <div class="footer__col footer__col--col2">
+                            <div class="footer__col-title">Help Support</div>
+                            <ul class="footer__menu">
+                                <li><a href="#">Support Forum</a></li>
+                                <li><a href="#">Terms & Conditions</a></li>
+                                <li><a href="#">Support Policy</a></li>
+                                <li><a href="#">Refund Policy</a></li>
+                                <li><a href="#">FAQs</a></li>
+                                <li><a href="#">Buyers Faq</a></li>
+                                <li><a href="#">Sellers Faq</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="footer__col footer__col--col4">
+                            <div class="footer__col-title">Newsletter</div>
+                            <div class="footer__col-text">Nunc placerat mi id nisi interdum they mollis. Praesent
+                                pharetra, justo ut scel erisque the mattis, leo quam.</div>
+                            <form action="">
+                                <input type="text" placeholder="Enter email">
+                                <button type="submit">Submit </button>
+                            </form>
+                            <ul class="footer__social">
+                                <li><a class="icon-facebook" href="#"></a></li>
+                                <li><a class="icon-twitter" href="#"></a></li>
+                                <li><a class="icon-google" href="#"></a></li>
+                                <li><a class="icon-pinterest-p" href="#"></a></li>
+                                <li><a class="icon-linkedin-square" href="#"></a></li>
+                                <li><a class="icon-dribbble" href="#"></a></li>
+                            </ul>
+
                         </div>
                     </div>
                 </div>
-                </div>
-        </div>
-        </section>
-        <!-- category -->
-
-
-        <!-- join -->
-
-        <section class="join section">
-            <div class="container">
-                <div class="join__inner">
-                    <h2 class="join__title title">Ready to Join Our Marketplace!</h2>
-                    <p class="join__subtitle">Over 25,000 designers and developers trust the MartPlace.</p>
-                    <a class="join__link" href="#">Join Us Today</a>
-                </div>
             </div>
-        </section>
-
-        <!-- join -->
-
-
-
-
-
-    </div>
-    <footer class="footer">
-        <div class="footer__top section">
-            <div class="container">
-                <div class="footer__row">
-
-                    <div class="footer__col footer__col--col1">
-                        <div class="footer__logo"><img src="images/footer-logo.png" alt="logo"></div>
-                        <div class="footer__col-text">Nunc placerat mi id nisi interdum they mollis. Praesent
-                            pharetra, justo ut scel erisque the mattis, leo quam.</div>
-                        <ul class="footer__col-contact">
-                            <li> <a class="link-phone" href="tel:+67898752235"><i class="lnr lnr-phone-handset"></i>
-                                    Phone: +6789-875-2235</a></li>
-                            <li> <a class="link-mail" href="mailto:support@aazztech.com"><i class="lnr lnr-envelope">
-                                    </i> support@aazztech.com</a></li>
-                            <li> <a class="link-map" href="#"><i class="lnr lnr-map-marker"> </i> 202 New Hampshire
-                                    Avenue
-                                    Northwest #100, New York-2573</a></li>
-                        </ul>
-                    </div>
-
-                    <div class="footer__col footer__col--col2">
-                        <div class="footer__col-title">Our Company</div>
-                        <ul class="footer__menu">
-                            <li><a href="#">About Us</a></li>
-                            <li><a href="#">How It Work</a></li>
-                            <li><a href="#">Affiliates</a></li>
-                            <li><a href="#">Testimonials</a></li>
-                            <li><a href="#">Contact Us</a></li>
-                            <li><a href="#">Copyright Notice</a></li>
-                            <li><a href="#">Blog</a></li>
-                        </ul>
-                    </div>
-
-                    <div class="footer__col footer__col--col2">
-                        <div class="footer__col-title">Help Support</div>
-                        <ul class="footer__menu">
-                            <li><a href="#">Support Forum</a></li>
-                            <li><a href="#">Terms & Conditions</a></li>
-                            <li><a href="#">Support Policy</a></li>
-                            <li><a href="#">Refund Policy</a></li>
-                            <li><a href="#">FAQs</a></li>
-                            <li><a href="#">Buyers Faq</a></li>
-                            <li><a href="#">Sellers Faq</a></li>
-                        </ul>
-                    </div>
-
-                    <div class="footer__col footer__col--col4">
-                        <div class="footer__col-title">Newsletter</div>
-                        <div class="footer__col-text">Nunc placerat mi id nisi interdum they mollis. Praesent
-                            pharetra, justo ut scel erisque the mattis, leo quam.</div>
-                        <form action="">
-                            <input type="text" placeholder="Enter email">
-                            <button type="submit">Submit </button>
-                        </form>
-                        <ul class="footer__social">
-                            <li><a class="icon-facebook" href="#"></a></li>
-                            <li><a class="icon-twitter" href="#"></a></li>
-                            <li><a class="icon-google" href="#"></a></li>
-                            <li><a class="icon-pinterest-p" href="#"></a></li>
-                            <li><a class="icon-linkedin-square" href="#"></a></li>
-                            <li><a class="icon-dribbble" href="#"></a></li>
-                        </ul>
-
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="footer__copyright">©2017 <span> MartPlace </span>. All rights reserved. Created by <a href="#">
-                AazzTech </a></div>
-    </footer>
+            <div class="footer__copyright">©2017 <span> MartPlace </span>. All rights reserved. Created by <a href="#">
+                    AazzTech </a></div>
+        </footer>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="js/libs.min.js"></script>

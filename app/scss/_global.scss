@@ -89,6 +89,11 @@ body {
     max-width: 240px;
     @include ovrf;
     text-align: center;
+    outline: none;
+    border: 1px solid transparent;
+    &:focus {
+        border: 1px solid $purple;
+    }
 }
 .section {
     padding: 115px 0;
