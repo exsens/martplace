@@ -2101,7 +2101,7 @@
     }
 }
 
-.category-content {
+.category-body {
     background-color: $gray;
     &__inner {
         display: flex;
@@ -2115,9 +2115,9 @@
     flex:0 0 263px;
     max-width: 263px;
     font-weight: 30;
-
+    margin-right: 30px;
     &__item {
-        padding: 25px 30px;
+        padding: 27px 30px 28px;
         &+& {
             margin-top: 30px;
         }
@@ -2130,7 +2130,7 @@
         padding: 3px 0 24px;
         border-bottom: 1px solid $line;
         position: relative;
-        margin-bottom: 25px;
+        margin-bottom: 30px;
         &::after {
             content: "\e874";
             font-family: 'Linearicons-Free';
@@ -2256,7 +2256,112 @@
         }
     }
 }
-.item {
+
+
+.category-content {
+    
+    &__items {
+        display: flex;
+        
+        margin: 0 -15px;
+    }
+
+    &__item {
+        flex-basis: calc(33.333333% - 15px);
+        overflow: hidden;
+        display: flex;
+        min-height: 100%;
+        flex-direction: column;
+        margin: 0 15px;
+        
+    }
+
+    &__images {
+        width: 100%;
+        img {
+            width: 100%;
+            max-height: 161px;
+        }
+    }
+
+    
+    &__item-info {
+        flex: 1 0 auto;
+        padding: 15px 20px;
+    }
+
+    &__item-box1 {
+        margin-bottom: 15px;
+    }
+
+    &__item-title {
+        font-size: 18px;
+        line-height: 24px;
+        font-weight: 500;
+        color: #000;
+        margin-bottom: 10px;
+       
+    }
+    &__text {
+       @include ovrf;
+       max-width: 225px;
+       
+    }
+
+    &__item-box2 {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+    &__item-user {
+        display: flex;
+    }
+    &__item-social {
+        display: none;
+        span {
+
+            color: $blue;
+
+        }
+        
+    }
+
+    &__item-box3 {
+        flex: 0 0 auto;
+        min-height: 61px;
+        padding: 0px 20px;
+        justify-content: space-between;
+    }
+}
+.product {
+
+    &__info {
+    }
+
+    &__avatar {
+    }
+
+    &__nickname {
+        @include ovrf;
+    }
+
+    &__category {
+    }
+}
+.rating {
+}
+.sells {
+}
+.lnr {
+}
+.lnr-cart {
+}
+.newest {
+
+    &__item-price {
+    }
+}
+.item-price {
 }
 
 

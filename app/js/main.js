@@ -31,7 +31,14 @@ $(function(){
       $('.user-menu').on('click', function(){
           $('.icons-box__inner, .header__user-box,  .header__btn, .header__logo').toggleClass('active');
       });
-      
+        
+      $('.category-filter-icons').on('click', function () {
+        if ($(this).hasClass('active')){
+          $('.category-content__item-category').appendTo('.category-content__item-box1');
+          $('.category-content__item-user').appendTo('.category-content__item-box2');
+          $('.category-content__item-sells').appendTo('.category-content__item-box3');
+        }
+      });
 
 
 
