@@ -31,18 +31,38 @@ $(function(){
       $('.user-menu').on('click', function(){
           $('.icons-box__inner, .header__user-box,  .header__btn, .header__logo').toggleClass('active');
       });
-        
-      $('.category-filter-icons').on('click', function () {
-        if ($(this).hasClass('active')){
-          $('.category-content__item-category').appendTo('.category-content__item-box1');
-          $('.category-content__item-user').appendTo('.category-content__item-box2');
-          $('.category-content__item-sells').appendTo('.category-content__item-box3');
-        }
+      
+     
+
+      $('.category-filter-icons__list').on('click', function () { 
+        $('.category-filter-icons__grid').removeClass('active');
+        $('.category-filter-icons__list').addClass('active');
+        if ($(this).hasClass('active')) {
+          $('.category-content__item').addClass('category-content__item--list');
+          $('.category-content__item--list').each(function () { 
+            $(this).find('.category-content__item-category').appendTo($(this).find('.category-content__item-box1'));
+            $(this).find('.category-content__item-user').appendTo($(this).find('.category-content__item-box2'));
+            $(this).find('.category-content__item-sells').appendTo($(this).find('.category-content__item-box3'));
+            $(this).find('.category-content__item-box3').appendTo($(this).find('.category-content__item-info'));
+          });
+        } 
       });
 
-
-
-    $(' select').styler();
+      $('.category-filter-icons__grid').on('click', function () { 
+        $('.category-filter-icons__list').removeClass('active');
+        $('.category-filter-icons__grid').addClass('active');
+        if ($(this).hasClass('active')) {
+          $('.category-content__item').each(function () {
+            $(this).find('.category-content__item-user').appendTo($(this).find('.category-content__item-box1'));
+            $(this).find('.category-content__item-category').appendTo($(this).find('.category-content__item-box3'));
+            $(this).find('.category-content__item-sells').appendTo($(this).find('.category-content__item-box2'));
+            $(this).find('.category-content__item-box3').appendTo($(this));
+            $('.category-content__item').removeClass('category-content__item--list');
+           });
+         }
+         
+      });
+    $('select').styler();
 
     $('.rating').rateYo({
         rating: 4.5,
