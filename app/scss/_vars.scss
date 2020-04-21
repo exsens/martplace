@@ -5,6 +5,7 @@ $tomatto: #ff6a6c;
 $green: #62d03b;
 $purple: #7347c1;
 $bi: #747a86;
+$br: 1px solid $line;
 
 @mixin bg {
     background-size: cover;
@@ -22,3 +23,4 @@ $bi: #747a86;
     white-space: nowrap;
     text-overflow: ellipsis;
 }
+

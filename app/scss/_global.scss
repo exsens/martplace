@@ -31,10 +31,10 @@ a {
     color: inherit;
     text-decoration: none;
 }
-ul,li {
+ul {
     margin: 0;
     padding: 0;
-    list-style: none;
+    list-style-type: none;
 }
 img {
     display: block;
@@ -91,8 +91,15 @@ body {
     text-align: center;
     outline: none;
     border: 1px solid transparent;
+    transition: background-color .2s linear, color .2s linear;
+
     &:focus {
         border: 1px solid $purple;
+    }
+    &:hover {
+        background-color: #fff;
+        color: $blue;
+        
     }
 }
 .section {
@@ -242,6 +249,10 @@ body {
         color: $blue;
     }
 }
+
+.item-comment--sky {
+    color: #58c9e9;
+}
 .item-comment,
 .item-views {
     font-size: 15px;
@@ -360,6 +371,15 @@ body {
 }
 .page-top {
     background: linear-gradient(90deg, rgba(114, 33, 160, 1) 0%, rgba(13, 62, 242, 1) 100%);
+    &__inner {
+        padding: 50px 0 55px;
+    }
+    &__title {
+        font-size: 30px;
+        color: #fff;
+        font-weight: 500;
+        margin-top: 25px;
+    }
 }
 .pagination {
     :first-child a{
@@ -398,4 +418,25 @@ body {
        
     }
 
+}
+.favorite-btn {
+    color: $purple;
+    @include shadow;
+    padding-left: 50px;
+    position: relative;
+    transition: background-color .2s linear, color .2s linear;
+    &::before {
+        font-family: 'Linearicons-Free';
+        content: "\e813";
+        font-size: 16px;
+        position: absolute;
+        left: 23px;
+        transform: translateX(-50%);
+    }
+    &:hover {
+        background-color: $blue;
+        color: #fff;
+        
+    }
+    
 }
