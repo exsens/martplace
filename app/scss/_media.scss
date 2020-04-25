@@ -811,6 +811,20 @@
         margin-bottom: 20px;
         text-align: center;
     }
+    .login__body {
+        padding: 25px 20px;
+    }
+    .login__top {
+        padding: 25px 15px;
+    }
+    .login__form button {
+        margin: 20px 0 25px;
+    }
+    .login__text {
+        font-size: 18px;
+        line-height: 26px;
+        margin-bottom: 15px;
+    }
 }
 
 @media (max-width:420px) {
@@ -973,5 +987,8 @@
     }
     .single-tab__content, .single-aside__item-inner, .single-content__info {
         padding: 15px;
+    }
+    .login__body {
+        padding: 25px 10px;
     }
 }

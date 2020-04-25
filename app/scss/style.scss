@@ -2022,7 +2022,7 @@
 
 .category-filter {
     box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
-
+    border-top: 1px solid rgba(0, 0, 0, 0.4);
     &__inner {
         display: flex;
         justify-content: space-between;
@@ -2310,13 +2310,13 @@
     }
 
     &__item {
-        flex-basis: calc(33.333333% - 15px);
+        flex-basis: calc(33.333333% - 30px);
         overflow: hidden;
         display: flex;
         min-height: 100%;
         flex-direction: column;
         margin: 0 15px;
-        max-width: 262px;
+       
         margin-bottom: 30px;
         &--list {
             flex-direction: row;
@@ -2916,6 +2916,145 @@
 
 
 // single-product-page 
+
+// favourites-page 
+.found {
+    font-size: 24px;
+    color: #000;
+    span {
+        font-weight: 500;
+    }
+}
+.favorites-filter {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    margin-right: 0;
+    .jq-selectbox + .jq-selectbox {
+        margin-left: 75px;
+    }
+}
+
+.filter-by {
+    display: inline-block;
+    margin-right: 30px;
+    height: 100%;
+    .jq-selectbox {
+        height: 100%;
+    }
+    .jq-selectbox__select {
+      height: 100%;
+      display: flex;
+      align-items: center;
+      border-radius: 0;
+      border-top: none;
+      border-bottom: none;
+    }
+}
+.favorites-body {
+    background-color: $gray;
+    
+}
+.favorites__item {
+  
+    .category-content__images {
+        img {
+            min-height: 230px;
+        }
+    }
+}
+.favorites-pagination {
+    text-align: center;
+}
+
+// favourites-page 
+
+// login-page 
+
+.login {
+    background-color: $gray;
+    &__inner {
+        margin: 0 auto;
+        max-width: 556px;
+    }
+
+    &__top {
+        text-align: center;
+        padding: 55px 15px 25px;
+        border-bottom: $br;
+    }
+
+    &__title {
+        font-size: 26px;
+        color: #000;
+        margin-bottom: 20px;
+    }
+
+    &__body {
+        padding: 25px 50px 55px;
+    }
+
+    &__form {
+
+        label {
+            color: #000;
+            font-weight: 500;
+        }
+
+        button {
+            display: block;
+            width: 100%;
+            max-width: 190px;
+            min-width: 120px;
+            padding: 10px;
+            line-height: 28px;
+            margin: 30px 0 40px;
+            font-weight: 500;
+            @include ovrf;
+        }
+        .single-aside-check {
+            letter-spacing: -1px;
+        }
+    }
+    &__input {
+        display: block;
+        width: 100%;
+        background-color: #f4f5f8;
+        color: #898f96;
+        height: 50px;
+        line-height: 30px;
+        margin: 12px 0 28px;
+        padding: 10px 20px;
+        outline: none;
+        border: 1px solid transparent;
+        
+        &:focus {
+            border: 1px solid $purple;
+        }
+    }
+
+    &__footer {
+
+    }
+
+    &__bottom {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    &__text {
+        color: #898f96;
+        margin-bottom: 5px;
+    }
+    &__link {
+        color: $blue;
+    }
+}
+
+
+
+// login-page 
 
 
 
