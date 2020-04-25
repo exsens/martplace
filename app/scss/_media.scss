@@ -816,6 +816,7 @@
     }
     .login__top {
         padding: 25px 15px;
+        line-height: 24px;
     }
     .login__form button {
         margin: 20px 0 25px;
@@ -824,6 +825,9 @@
         font-size: 18px;
         line-height: 26px;
         margin-bottom: 15px;
+    }
+    .login__bottom {
+        justify-content: center;
     }
 }
 

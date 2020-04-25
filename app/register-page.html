@@ -382,9 +382,9 @@
                     <div class="page-top__inner">
                         <ul class="breadcrumbs">
                             <li><a href="#">Home </a></li>
-                            <li><a>Login</a></li>
+                            <li><a>Register</a></li>
                         </ul>
-                        <h2 class="page-top__title">Login</h2>
+                        <h2 class="page-top__title">Register</h2>
                     </div>
                 </div>
             </section>
@@ -395,28 +395,36 @@
             <section class="login section">
                 <div class="login__inner item">
                     <div class="login__top">
-                        <h3 class="login__title">Welcome Back</h3>
-                        <h4 class="login__subtitle">You can sign in with your username</h4>
+                        <h3 class="login__title">Create Your Account</h3>
+                        <h4 class="login__subtitle">Please fill the following fields with appropriate information
+                            to register a new MartPlace account.</h4>
                     </div>
                     <div class="login__body">
                         <form action="#" class="login__form">
+                            <label for="#">Your Name
+                                <input class="login__input" type="text" placeholder="Enter your name..." required>
+                            </label>
+                            <label for="#">Email Address
+                                <input class="login__input" type="text" placeholder="Enter your email address"
+                                    required>
+                            </label>
                             <label for="#">Username
-                                <input class="login__input" type="text" placeholder="Enter your username..." required>
+                                <input class="login__input" type="text" placeholder="Enter your username..."
+                                    required>
                             </label>
                             <label for="#">Password
                                 <input class="login__input" type="password" placeholder="Enter your password..."
                                     required>
                             </label>
-                            <label class="single-aside-check">
-                                <input type="checkbox" class="single-aside-check__input" checked>
-                                <span class="single-aside-check__box"></span>
-                                Remember me
+                            <label for="#">Confirm Password
+                                <input class="login__input" type="password" placeholder="Enter your password..."
+                                    required>
                             </label>
-                            <button class="button">Login Now</button>
+                           
+                            <button class="button">Register Now</button>
                         </form>
                         <div class="login__bottom">
-                            <div class="login__text">Lost your <a class="login__link" href="#">username</a> or <a class="login__link" href="#">password?</a></div>
-                            <div class="login__text">Don't have an <a class="login__link" href="#"> account? </a></div>
+                            <div class="login__text">Already have an account? <a class="login__link" href="#">Login</a> </div>
                         </div>
                     </div>
                 </div>
