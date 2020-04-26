@@ -371,6 +371,7 @@ body {
 }
 .page-top {
     background: linear-gradient(90deg, rgba(114, 33, 160, 1) 0%, rgba(13, 62, 242, 1) 100%);
+    border-bottom: 1px solid rgba(0,0,0,0.4);
     &__inner {
         padding: 50px 0 55px;
     }
@@ -379,6 +380,12 @@ body {
         color: #fff;
         font-weight: 500;
         margin-top: 25px;
+    }
+    &__subtitle {
+        font-weight: 300;
+        font-size: 30px;
+        color: #f3f3f8;
+        margin: 25px 0 65px;
     }
 }
 .pagination {

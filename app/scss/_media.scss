@@ -544,7 +544,19 @@
         margin-bottom: 20px;
         text-align: center;
     }
-
+    .regulations__item {
+       flex-direction: column;
+       align-items: center;
+       padding: 45px 0;
+       text-align: center;
+    }
+    .regulations__images {
+        margin-bottom: 20px;
+        margin-right: 0;
+    }
+    .regulations__item--reverse .regulations__images {
+        margin-left: 0;
+    }
 }
 
 @media (max-width:640px) {
@@ -828,6 +840,16 @@
     }
     .login__bottom {
         justify-content: center;
+    }
+    .page-top__subtitle {
+        font-size: 22px;
+        margin: 20px 0 35px;
+    }
+    .regulations__item-text {
+        line-height: 1.5;
+    }
+    .regulations__item-title {
+        margin-bottom: 15px;
     }
 }
 
