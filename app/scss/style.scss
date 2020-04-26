@@ -2983,6 +2983,9 @@
         padding: 55px 50px 25px;
         border-bottom: $br;
         line-height: 28px;
+        &--password {
+            text-align: left;
+        }
     }
 
     &__title {
