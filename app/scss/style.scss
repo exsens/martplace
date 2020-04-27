@@ -3391,6 +3391,45 @@
 
 // terms-page 
 
+// 404-page 
+
+.page-404 {
+    padding: 75px 0 100px;
+    &__content {
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    &__images {
+        max-width: 393px;
+        margin: 0 auto 45px;
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    &__title {
+        font-weight: 300;
+        font-size: 30px;
+        color: #000;
+        margin-bottom: 40px;
+
+    }
+
+    &__link {
+        max-width: 190px;
+        width: 100%;
+        padding: 15px;
+        font-size: 15px;
+        line-height: 20px;
+        font-weight: 500;
+    }
+}
+
+
+// 404-page 
+
 
 
 
