@@ -3207,6 +3207,138 @@
 
 // regulations-page 
 
+// pricing-page 
+
+.pricing {
+    background-color: $gray;
+
+    &__inner {
+        text-align: center;
+    }
+    &__title {
+        margin-bottom: 25px;
+    }
+
+    &__subtitle {
+        max-width: 670px;
+        margin: 0 auto 55px;
+    }
+
+    &__items {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__item {
+        flex-basis: 33.33333%;
+        padding: 25px 30px 30px;
+        border-top: 3px solid transparent;
+        margin-right: 30px;
+        display: flex;
+        flex-direction: column;
+        min-height: 100%;
+        &:last-child {
+            margin-right: 0;
+        }
+        &--1 {
+            border-color: $tomatto;
+            .pricing__item-link {
+                background-color: $tomatto;
+            }
+        }
+        &--2 {
+            border-color: $blue;
+            .pricing__item-link {
+                background-color: $blue;
+            }
+        }
+        &--3 {
+            border-color: #feb71d;
+            .pricing__item-link {
+                background-color: #feb71d;
+            }
+        }
+    }
+
+    &__item-title {
+        padding-bottom: 25px;
+        margin-bottom: 25px;
+        border-bottom: $br;
+    }
+
+    &__item-total {
+        font-weight: 300;
+        margin-bottom: 45px;
+        span{ 
+            color:#000;
+            font-size: 36px;
+            position: relative;
+            &::before {
+                content: "$";
+                font-size: 18px;
+                position: absolute;
+                top: 20%;
+                left: -10%;
+            }
+        }
+        
+    }
+
+    &__item-list {
+        text-align: left;
+        margin-bottom: 35px;
+        li {
+            position: relative;
+            padding-left: 23px;
+            margin-bottom: 15px;
+            font-weight: 300;
+            line-height: 20px;
+            span {
+                font-weight: 500;
+                color: #000;
+            }
+            i {
+
+                font-size: 18px;
+                vertical-align: text-bottom;
+                margin-left: 6px;
+            }
+
+            &::before {
+                content: "";
+                width: 7px;
+                height: 7px;
+                border-radius: 50%;
+                background-color: #c5cad4;
+                position: absolute;
+                left: 0;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    &__item-link {
+        display: block;
+        width: 100%;
+        text-align: center;
+        padding: 15px 25px;
+        line-height: 20px;
+        font-size: 18px;
+        font-weight: 500;
+        color: #fff;
+        border-radius: 4px;
+        margin-top: auto;
+    }
+}
+
+
+
+// pricing-page 
+
 
 
 
