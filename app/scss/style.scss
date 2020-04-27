@@ -2500,10 +2500,9 @@
 .single {
     background-color: $gray;
     padding: 70px 0 120px;
-
-    &__inner {
-        display: flex;
-    }
+}
+.single__inner {
+    display: flex;
 }
 
 .single-content {
@@ -3148,8 +3147,10 @@
         padding: 90px 0;
         display: flex;
         justify-content: space-between;
+
         &--reverse {
             flex-direction: row-reverse;
+
             .regulations__images {
                 margin-right: 0;
                 margin-left: 20px;
@@ -3161,6 +3162,7 @@
         max-width: 461px;
         width: 100%;
         margin-right: 20px;
+
         img {
             width: 100%;
             height: auto;
@@ -3185,7 +3187,7 @@
         line-height: 30px;
         margin: 0 0 20px;
     }
-      
+
     &__link {
         padding: 15px 10px;
         max-width: 170px;
@@ -3196,6 +3198,7 @@
         line-height: 20px;
         text-align: center;
         color: $blue;
+
         &:hover {
             background-color: $blue;
             color: #fff;
@@ -3215,6 +3218,7 @@
     &__inner {
         text-align: center;
     }
+
     &__title {
         margin-bottom: 25px;
     }
@@ -3237,23 +3241,30 @@
         display: flex;
         flex-direction: column;
         min-height: 100%;
+
         &:last-child {
             margin-right: 0;
         }
+
         &--1 {
             border-color: $tomatto;
+
             .pricing__item-link {
                 background-color: $tomatto;
             }
         }
+
         &--2 {
             border-color: $blue;
+
             .pricing__item-link {
                 background-color: $blue;
             }
         }
+
         &--3 {
             border-color: #feb71d;
+
             .pricing__item-link {
                 background-color: #feb71d;
             }
@@ -3269,10 +3280,12 @@
     &__item-total {
         font-weight: 300;
         margin-bottom: 45px;
-        span{ 
-            color:#000;
+
+        span {
+            color: #000;
             font-size: 36px;
             position: relative;
+
             &::before {
                 content: "$";
                 font-size: 18px;
@@ -3281,22 +3294,25 @@
                 left: -10%;
             }
         }
-        
+
     }
 
     &__item-list {
         text-align: left;
         margin-bottom: 35px;
+
         li {
             position: relative;
             padding-left: 23px;
             margin-bottom: 15px;
             font-weight: 300;
             line-height: 20px;
+
             span {
                 font-weight: 500;
                 color: #000;
             }
+
             i {
 
                 font-size: 18px;
@@ -3315,6 +3331,7 @@
                 top: 50%;
                 transform: translateY(-50%);
             }
+
             &:last-child {
                 margin-bottom: 0;
             }
@@ -3338,6 +3355,41 @@
 
 
 // pricing-page 
+
+// terms-page 
+
+.terms {
+    background-color: $gray;
+    padding: 70px 0 120px;
+    &__inner {
+        padding: 40px 0 45px;
+    }
+
+    &__line {
+        padding: 0 30px;
+        border-bottom: $br;
+
+        &:last-child {
+            
+            border-bottom: none;
+        }
+    }
+
+    &__title {
+        font-size: 24px;
+        font-weight: 300;
+        color: #000;
+        margin-bottom: 25px;
+    }
+
+    &__text {
+        margin: 25px 0 55px;
+    }
+}
+
+
+
+// terms-page 
 
 
 
